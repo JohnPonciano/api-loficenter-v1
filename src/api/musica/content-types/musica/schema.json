@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "musicas",
+  "info": {
+    "singularName": "musica",
+    "pluralName": "musicas",
+    "displayName": "musica"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "artist": {
+      "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "path": {
+      "allowedTypes": [
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
